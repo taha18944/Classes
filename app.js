@@ -141,39 +141,39 @@
 //~~~~~~~~~~~ Class 2 ~~~~~~~~~~~
 
 
-let a = ['a','b','c'];
-let b = [
-  {
-    id: 1,
-    name: "Muhammad Ali",
-    category: "a",
-  },
-  {
-    id: 2,
-    name: "Abdul Basit",
-    category: "a",
-  },
-  {
-    id: 3,
-    name: "Muhammad Ahmed",
-    category: "b",
-  },
-  {
-    id: 4,
-    name: "Ahmed Ali",
-    category: "a",
-  },
-  {
-    id: 5,
-    name: "Yaseen Ahmed",
-    category: "b",
-  },
-  {
-    id: 6,
-    name: "Muhammad Furqan",
-    category: "a",
-  },
-];
+// let a = ['a','b','c'];
+// let b = [
+//   {
+//     id: 1,
+//     name: "Muhammad Ali",
+//     category: "a",
+//   },
+//   {
+//     id: 2,
+//     name: "Abdul Basit",
+//     category: "a",
+//   },
+//   {
+//     id: 3,
+//     name: "Muhammad Ahmed",
+//     category: "b",
+//   },
+//   {
+//     id: 4,
+//     name: "Ahmed Ali",
+//     category: "a",
+//   },
+//   {
+//     id: 5,
+//     name: "Yaseen Ahmed",
+//     category: "b",
+//   },
+//   {
+//     id: 6,
+//     name: "Muhammad Furqan",
+//     category: "a",
+//   },
+// ];
 
 // for(var i=0; i<a.length; i++){
 //     console.log(a[i])
@@ -248,13 +248,35 @@ let b = [
 
 // console.log(bool)
 
-let num1 = 10
-let num2 = 10
+// let num1 = 10
+// let num2 = 10
 
-let bool =  num1-num2 ? 'number Exist' :"number doesn't exist"
+// let bool =  num1-num2 ? 'number Exist' :"number doesn't exist"
 
-console.log(bool)
+// console.log(bool)
 
+
+function PassbyReference(obj) {
+  let tmp = obj.a;
+  obj.a = obj.b;
+  obj.b = tmp;
+
+  console.log(`Inside Pass By Reference
+    Function -> a = ${obj.a} b = ${obj.b}`);
+}
+
+let obj = {
+  a: 10,
+  b: 20
+
+}
+console.log(`Before calling Pass By Reference
+  Function -> a = ${obj.a} b = ${obj.b}`);
+
+PassbyReference(obj)
+
+console.log(`After calling Pass By Reference
+  Function -> a = ${obj.a} b = ${obj.b}`);
 
 
 
