@@ -236,6 +236,8 @@ let b = [
 
 // if(bool){
 //   console.log('abc')
+//   console.log('abc')
+//   console.log('abc')s
 // }
 
 // let num = 4
@@ -246,12 +248,12 @@ let b = [
 
 // console.log(bool)
 
-// let num1 = 10
-// let num2 = 10
+let num1 = 10
+let num2 = 10
 
-// let bool =  num1-num2 ? 'number Exist' :"number doesn't exist"
+let bool =  num1-num2 ? 'number Exist' :"number doesn't exist"
 
-// console.log(bool)
+console.log(bool)
 
 
 
