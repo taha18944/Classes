@@ -15,9 +15,14 @@
 
 let object1 = {
   a: 'taha',
-  b: 42,
+  b: 42,	
   c: false
 };
+let keys = [];
+for (let key in object1) {
+    keys.push(key);
+}
 
+console.log(keys);
 console.log(Object.values(object1));
 console.log(Object.keys(object1));
